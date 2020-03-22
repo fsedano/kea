@@ -2,5 +2,6 @@ version: "3"
 services:
         kea:
                 build: .
+                network_mode: "host"
                 volumes:
-                        - /home/fsedano/kea:/app
+                        - /home/fsedano/kea/data:/data
